@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        * {
+            margin: 0px auto;
+            padding: 0px;
+        }
+
+        .wrapper {
+            background-color: aquamarine;
+            width: auto;
+            height: 500px;
+        }
+
+        .menu li {
+            width: 150px;
+            float: left;
+            background-color: bisque;
+            line-height: 50px;
+            /* căn đều phía trên dưới content*/
+            list-style-type: none;
+            text-indent: 15px;
+            font-size: 30px;
+            border: 1px solid black;
+        }
+
+        .menu li:hover {
+            background-color: azure;
+            font-weight: bold;
+        }
+
+        li>a {
+            text-decoration: none;
+
+        }
+
+        li:hover>a {
+            color: rgb(201, 22, 22);
+        }
+
+        .sub-menu {
+            display: none;
+            position: relative;
+        }
+
+        li:hover>.sub-menu {
+            display: block;
+        }
+
+        .menu li .sub-menu li:hover {
+            background-color: azure;
+            color: black;
+        }
+
+        .sub-menux {
+            display: none;
+        }
+
+        li:hover>.sub-menux {
+            display: block;
+            position: absolute;
+            left: 150px;
+            top: 51px;
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Item 3.1</a></li>
+                        <li><a href="">Item 3.2</a>
+                            <ul class="sub-menux">
+                                <li><a href="">Item 3.2.1</a></li>
+                                <li><a href="">Item 3.2.2</a></li>
+                                <li><a href="">Item 3.2.3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Item 3.3</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Item 4</a></li>
+                <li><a href="">Item 5</a></li>
+            </ul>
+        </nav>
+
+
+
+    </div>
+</body>
+
+</html>
